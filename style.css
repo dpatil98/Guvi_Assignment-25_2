@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif; 
+    font-weight: 400;
+   background-color: #fafafa;
+
+}
+
+
+
+.search-box-container{
+
+     position: relative; /* for autocom-box */
+    /* background-color: gold; */
+    padding: 0;
+    
+}
+
+.inp-search{
+
+   outline: none;
+   border: 1px solid rgb(86, 132, 232);
+   border-radius:  5px 0  0 5px;
+
+   padding:10px 15px;
+
+}
+
+.btn-search{
+
+    outline: none;
+    border: none;
+    border-radius:   0 5px 5px 0;
+ 
+    padding:10px 15px;
+
+    color: white;
+    background:rgb(86, 132, 232);
+
+ }
+
+
+
+
+
+.autocom-box{
+
+    margin-top:45px;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+    background-color: rgb(247, 247, 243);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid rgb(86, 132, 232);
+  }
+/* :hover so we can get values after clicking (when it goes out pf 'focus')*/
+.inp-search:focus ~ .autocom-box ,.autocom-box:hover{
+
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+    width: 100%; 
+  }
+
+
+
+
+.autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    /* display: none; */
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+
+.inp-search:focus ~ .autocom-box li{
+    display: block;
+ } 
+
+.autocom-box li:hover{
+    background: #efefef;
+  }
+
+
+  
+
+.globalMaarket-container label{
+
+    /* background-color: rgb(255, 246, 246); */
+    padding:0 10px;
+}
+
+
+.result-container{
+    background-color: rgb(248, 248, 248);
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.result-container td , .result-container td{
+  
+    padding: 20px 5px;
+    
+}
+
